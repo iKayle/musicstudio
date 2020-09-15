@@ -1,0 +1,67 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+* {
+  font-family: 'Roboto', sans-serif;
+  outline: none !important;
+}
+
+.fab {
+  display: flex !important;
+}
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write you own custom component styles here */
+
+/* ESTILO VEM AQUI */
+
+.fundo1 {
+  background-image: url('/muie.jpg');
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.fundo2 {
+  position: relative;
+}
+.fundo2::after {
+  content: ' ';
+  z-index: -1;
+  background-image: url('/bg2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: brightness(40%);
+  width: 100%;
+  height: 100%;
+}
+
+.fundo3 {
+  position: relative;
+}
+.fundo3::after {
+  content: ' ';
+  z-index: -1;
+  background-image: url('/bg3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: brightness(40%);
+  width: 100%;
+  height: 100%;
+}
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
