@@ -4,7 +4,7 @@ export function Hero() {
       <div className="absolute top-0 z-10 w-full h-full bg-black bg-opacity-25" />
       <div className="flex flex-row justify-around pt-16 pb-32">
         <nav className="z-20 text-3xl font-bold text-white">SONS Estúdio</nav>
-        <ul className="z-20 flex flex-row items-baseline pb-5 space-x-3 text-xl text-white">
+        <ul className="z-20 flex flex-row items-baseline pb-5 space-x-3 text-xl text-white cursor-pointer">
           <li className="pr-5 text-sm border-r-2">INÍCIO</li>
           <li className="pr-5 text-sm border-r-2">O ESTÚDIO</li>
           <li className="pr-5 text-sm border-r-2">EQUIPAMENTOS</li>
